@@ -82,9 +82,11 @@ public:
     if(m_head == nullptr)return ERROR;
     node* curr = m_head;
     node* prev = m_head;
+    double toRetrun;
     if(m_head->nextNode == nullptr) // only one item
     {
       m_head = nullptr;
+      toRetrun = curr->key;
       curr = curr->nextNode;
     }
     else
@@ -97,8 +99,9 @@ public:
       // now curr is pointing to the last node
       // and prev is pointing to one before that
       prev->nextNode = nullptr;
+      toRetrun = curr->key;
     }
-    double toRetrun = curr->key;
+
     delete curr;
     return toRetrun;
   }
