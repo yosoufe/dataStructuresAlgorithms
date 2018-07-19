@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {
-  LinkedList list;
+  LinkedList<int> list;
 
   /********************************/
   // add items to the front
@@ -46,5 +46,6 @@ int main()
   std::forward_list<double> stdlist;
   stdlist.push_front(10);
   cout << stdlist.front() << endl;
+
   return 0;
 }
