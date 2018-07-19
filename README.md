@@ -10,7 +10,40 @@ In Coursera:
 2. [Data Structures and Algorithms Specialization](https://www.coursera.org/specializations/data-structures-algorithms) from UC San Diego:
 	- [ ] [Algorithmic Toolbox](https://www.coursera.org/learn/algorithmic-toolbox) 
 	- [ ] [Data Structures](https://www.coursera.org/learn/data-structures) 
+		- [ ] Singly/Doubly-Linked Lists
+		- [ ] Stacks & Queues
+		- [ ] Trees
+		- [ ] Amortized Analysis
+		- [ ] Binary Tree
+		- [ ] Heap Sort.
+		- [ ] Hash Tables
+		- [ ] Binary Search Trees
 	- [ ] [Algorithms on Graphs](https://www.coursera.org/learn/algorithms-on-graphs) 
 	- [ ] [Algorithms on Strings](https://www.coursera.org/learn/algorithms-on-strings) 
 	- [ ] [Advanced Algorithms and Complexity](https://www.coursera.org/learn/advanced-algorithms-and-complexity) 
 	- [ ] [Genome Assembly Programming Challenge](https://www.coursera.org/learn/assembling-genomes) 
+	
+In edx:
+1. [Algorithms and Data Structures](https://www.edx.org/course/algorithms-and-data-structures-0) from Microsoft.
+2. [Foundations of Data Structures](https://www.edx.org/course/foundations-of-data-structures) 
+	* Basic Data Types, Notion of an Abstract Data Type
+	* Mathematical Properties of Sequences
+	* Special Types of Sequences: Stacks, Queues, Strings
+	* Implementation of Sequence Type: Arrays and Linked Lists
+	* Trees
+	* Sets and Maps
+	* Graphs
+3. [Implementation of Data Structures](https://www.edx.org/course/implementation-of-data-structures):
+	* Review of OO programming, STL of C++
+	* Stacks
+	* Queues
+	* Lists
+	* Trees
+	* Graphs
+4. [Algorithms](https://www.edx.org/course/algorithms):
+	* Sorting and Searching
+	* Numerical Algorithms
+	* String Algorithms
+	* Geometric Algorithms
+	* Graph Algorithms
+5. [Data Structures and Software Design](https://www.edx.org/course/data-structures-software-design-pennx-sd2x) University of Pennsylvania
