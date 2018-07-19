@@ -26,8 +26,8 @@ public:
 //  Boolean Find(Key)         is key in list?
 //  Erase(Key)                remove key from list
 //  Boolean Empty()           empty list?
-//  AddBefore(Node, Key)      adds key before node
-//  AddAfter(Node, Key)       adds key after node
+//  AddBefore(Node, Key)      adds key before node // Not Yet Implemented
+//  AddAfter(Node, Key)       adds key after node  // Not Yet Implemented
 
   void pushFront(double key)
   {
@@ -81,24 +81,17 @@ public:
   {
     if(m_head == nullptr)return ERROR;
     node* curr = m_head;
-    node* prev = m_head;
+    node** ptr2PrevNextNode = &m_head;
     double toRetrun;
-
     while(curr->nextNode != nullptr)
     {
-      prev = curr;
+      ptr2PrevNextNode = &curr->nextNode;
       curr = curr->nextNode;
     }
     // now curr is pointing to the last node
-    // and prev is pointing to one before the last node
-    if(prev == m_head)
-    {
-      m_head = nullptr;
-    }
-    else
-    {
-      prev->nextNode = nullptr;
-    }
+    // and ptr2PrevNextNode is pointing to the pointer that is
+    // pointing to the last node (the one that should become nullptr)
+    *ptr2PrevNextNode = nullptr;
     toRetrun = curr->key;
     delete curr;
     return toRetrun;
@@ -119,26 +112,25 @@ public:
   //  Erase(Key)                remove key from list
   void erase(double key)
   {
-    if(m_head == nullptr)return;
     node* curr = m_head;
-    node* prev = m_head;
-    while(curr->nextNode != nullptr)
+    node** ptr2PrevNextNode = &m_head;
+    while(curr != nullptr)
     {
-      prev = curr;
+      if(curr->key == key)
+      {
+        *ptr2PrevNextNode = curr->nextNode;
+        delete curr;
+        return;
+      }
+      ptr2PrevNextNode = &curr->nextNode;
       curr = curr->nextNode;
     }
-    // now curr is pointing to the last node
-    // and prev is pointing to one before that
-    prev->nextNode = nullptr;
-    delete curr;
   }
 
   bool isEmpty()
   {
     return (m_head == nullptr);
   }
-  void addBefore();
-  void addAfter();
 };
 
 #endif // LINKEDLIST_H
