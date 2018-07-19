@@ -10,8 +10,8 @@ In Coursera:
 2. [Data Structures and Algorithms Specialization](https://www.coursera.org/specializations/data-structures-algorithms) from UC San Diego:
 	- [ ] [Algorithmic Toolbox](https://www.coursera.org/learn/algorithmic-toolbox) 
 	- [ ] [Data Structures](https://www.coursera.org/learn/data-structures) 
-		- [ ] Singly/Doubly-Linked Lists
-		- [ ] Stacks & Queues
+		- [x] Singly/Doubly-Linked Lists
+		- [x] Stacks & Queues
 		- [ ] Trees
 		- [ ] Amortized Analysis
 		- [ ] Binary Tree
