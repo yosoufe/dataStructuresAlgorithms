@@ -83,25 +83,23 @@ public:
     node* curr = m_head;
     node* prev = m_head;
     double toRetrun;
-    if(m_head->nextNode == nullptr) // only one item
+
+    while(curr->nextNode != nullptr)
+    {
+      prev = curr;
+      curr = curr->nextNode;
+    }
+    // now curr is pointing to the last node
+    // and prev is pointing to one before the last node
+    if(prev == m_head)
     {
       m_head = nullptr;
-      toRetrun = curr->key;
-      curr = curr->nextNode;
     }
     else
     {
-      while(curr->nextNode != nullptr)
-      {
-        prev = curr;
-        curr = curr->nextNode;
-      }
-      // now curr is pointing to the last node
-      // and prev is pointing to one before that
       prev->nextNode = nullptr;
-      toRetrun = curr->key;
     }
-
+    toRetrun = curr->key;
     delete curr;
     return toRetrun;
   }
