@@ -12,9 +12,9 @@ In Coursera:
 	- [ ] [Data Structures](https://www.coursera.org/learn/data-structures) 
 		- [x] Singly/Doubly-Linked Lists
 		- [x] Stacks & Queues
-		- [ ] Trees
-		- [ ] Amortized Analysis
-		- [ ] Binary Tree
+		- [x] Trees (General)
+		- [x] Amortized Analysis
+		- [x] Binary Tree heap tree
 		- [ ] Heap Sort.
 		- [ ] Hash Tables
 		- [ ] Binary Search Trees
