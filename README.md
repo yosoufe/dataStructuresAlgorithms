@@ -15,7 +15,8 @@ In Coursera:
 		- [x] Trees (General)
 		- [x] Amortized Analysis
 		- [x] Binary Tree heap tree
-		- [ ] Heap Sort.
+		- [x] Heap Sort.
+		- [ ] Disjoint-set data structure
 		- [ ] Hash Tables
 		- [ ] Binary Search Trees
 	- [ ] [Algorithms on Graphs](https://www.coursera.org/learn/algorithms-on-graphs) 
